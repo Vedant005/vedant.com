@@ -5,9 +5,6 @@ import GitHubCalendar from "react-github-calendar";
 import {
   FaGithub,
   FaLinkedin,
-  FaCodepen,
-  FaDribbble,
-  FaInstagram,
 } from "react-icons/fa";
 import { SiX } from "react-icons/si";
 import { SiLeetcode, SiHashnode } from "react-icons/si";

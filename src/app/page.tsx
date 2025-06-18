@@ -18,7 +18,7 @@ export default function Home() {
   const [calendarYear, setCalendarYear] = useState<number | undefined>(
     undefined
   );
-  const github: any = {
+  const github: { light: string[]; dark: string[] } = {
     light: ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
     dark: ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
   };
@@ -164,11 +164,11 @@ export default function Home() {
     },
   ];
 
-  type Blog = {
-    title: string;
-    description: string;
-    image: string;
-  };
+  // type Blog = {
+  //   title: string;
+  //   description: string;
+  //   image: string;
+  // };
 
   return (
     <main className="min-h-screen bg-[#0f0f0f] text-white  px-4 py-10 ">
@@ -177,7 +177,7 @@ export default function Home() {
           <div className="w-full mb-9   md:w-1/2 text-center md:text-left">
             <h1 className="text-4xl sm:text-5xl  md:text-6xl font-bold mb-3 leading-tight">
               Hi, <br />
-              <span className="text-white">I'm Vedant</span>{" "}
+              <span className="text-white">I&apos;m Vedant</span>{" "}
               <span className="inline-block animate-waving-hand">👋</span>
             </h1>
             <p className="text-gray-300 text-lg sm:text-xl max-w-xl  ">

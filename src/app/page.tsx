@@ -240,7 +240,7 @@ export default function Home() {
                   key={skill}
                   className="flex items-center gap-2 px-3 py-1 rounded-md text-sm font-medium text-white bg-[#28282B] shadow-md border border-zinc-700 hover:scale-105 transition-transform"
                 >
-                  <img
+                  <Image
                     src={skillIcons[skill]}
                     alt={skill}
                     width={18}

@@ -199,7 +199,7 @@ export default function Home() {
           <div className="w-full md:w-1/2 flex justify-center">
             <div className="w-100 h-80 rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/profile.jfif"
+                src="/profile.webp"
                 alt="Vedant Kanekar"
                 width={500}
                 height={500}

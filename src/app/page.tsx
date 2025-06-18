@@ -10,9 +10,11 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { SiX } from "react-icons/si";
+import { SiLeetcode, SiHashnode } from "react-icons/si";
 import YearButton from "./utils/YearButton";
 import { getGitHubYears } from "./utils/getYears";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
   const [calendarYear, setCalendarYear] = useState<number | undefined>(
@@ -181,17 +183,37 @@ export default function Home() {
               <span className="inline-block animate-waving-hand">👋</span>
             </h1>
             <p className="text-gray-300 text-lg sm:text-xl max-w-xl  ">
-              Software Engineer turned Full-Stack Developer. I love building
-              things, learning, and helping others. Active on GitHub and
-              LinkedIn.
+              Full-Stack Developer with the mindset of building scable backend
+              and responsive frontends with awesome styles. Keen on learning new
+              things and trying to find optimal solution for each software
+              problem.
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-3 text-sm text-gray-300">
-              <LinkWithIcon icon={<FaGithub />} label="GitHub" />
-              <LinkWithIcon icon={<SiX />} label="X" />
-              <LinkWithIcon icon={<FaLinkedin />} label="LinkedIn" />
-              <LinkWithIcon icon={<FaCodepen />} label="Codepen" />
-              <LinkWithIcon icon={<FaDribbble />} label="Dribbble" />
-              <LinkWithIcon icon={<FaInstagram />} label="Instagram" />
+              <LinkWithIcon
+                icon={<FaGithub />}
+                label="GitHub"
+                link="https://github.com/vedant005"
+              />
+              <LinkWithIcon
+                icon={<SiX />}
+                label="X"
+                link="https://x.com/VedantKane56217"
+              />
+              <LinkWithIcon
+                icon={<FaLinkedin />}
+                label="LinkedIn"
+                link="https://www.linkedin.com/in/vedant-kanekar/"
+              />
+              <LinkWithIcon
+                icon={<SiLeetcode />}
+                label="LeetCode"
+                link="https://leetcode.com/u/Vedant109/"
+              />
+              <LinkWithIcon
+                icon={<SiHashnode />}
+                label="Hashnode"
+                link="https://hashnode.com/@Vedantk005"
+              />
             </div>
           </div>
 
@@ -320,14 +342,19 @@ export default function Home() {
 function LinkWithIcon({
   icon,
   label,
+  link,
 }: {
   icon: React.ReactNode;
   label: string;
+  link: string;
 }) {
   return (
-    <div className="flex items-center gap-1 px-2 py-1 bg-[#1a1a1a] rounded hover:bg-[#262626] transition">
+    <Link
+      href={link}
+      className="flex items-center gap-1 px-2 py-1 bg-[#1a1a1a] rounded hover:bg-[#262626] transition"
+    >
       <span className="text-sm">{icon}</span>
       <span>{label}</span>
-    </div>
+    </Link>
   );
 }

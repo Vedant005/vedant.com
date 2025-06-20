@@ -63,7 +63,7 @@ function Skills() {
     <section className="text-white py-16   ">
       <h2 className="text-3xl font-bold mb-6 text-white">Skills</h2>
       <div className="max-w-6xl mx-auto border dark:border-zinc-500 rounded-xl p-5">
-        <div className="flex flex-wrap gap-5 cursor-pointer">
+        <div className="flex flex-wrap gap-3 cursor-pointer">
           {skills.map((skill) => (
             <div
               key={skill}

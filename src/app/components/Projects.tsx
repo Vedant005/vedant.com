@@ -107,7 +107,7 @@ function Projects() {
                   {project.description}
                 </p>
               </div>
-              <div className="h-15">
+              <div className="h-15 mb-3">
                 <div className="mt-3 mb-3  flex flex-wrap gap-2">
                   {project.tech.map((tech, i) => (
                     <div
@@ -119,7 +119,7 @@ function Projects() {
                   ))}
                 </div>
               </div>
-              <div className="p-2 mt-4 flex gap-2">
+              <div className="p-2 mt-8 flex items-start gap-2">
                 {project.website && (
                   <Link
                     href={project.website}

@@ -32,10 +32,10 @@ export default function Home() {
             </p>
 
             <p className="text-gray-300 text-lg sm:text-xl max-w-xl  ">
-              Full-Stack Developer specialized in building scalable backend and
-              responsive frontends with awesome styles. Keen on learning new
-              things and trying to find optimal solution for each software
-              problem.
+              Full-Stack Developer who loves creating intuitive and dynamic UIs
+              with fast, secure and scalable backends using modern tools. <br />
+              Obsessed with learning new technologies.
+              <br /> Currently exploring Web3 and GenAI.
             </p>
             <Links />
           </div>

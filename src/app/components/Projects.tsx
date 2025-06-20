@@ -101,7 +101,7 @@ function Projects() {
               className="w-full h-50 object-cover  rounded-t-xl"
             />
             <div className="p-4 flex flex-col">
-              <div className="h-25">
+              <div className="h-25 mb-5">
                 <h3 className="text-lg font-semibold">{project.title}</h3>
                 <p className="mt-2 text-gray-300 text-sm">
                   {project.description}

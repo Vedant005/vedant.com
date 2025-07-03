@@ -4,7 +4,6 @@ import Image from "next/image";
 
 type Project = {
   title: string;
-
   description: string;
   image: string;
   tech: string[];
@@ -22,29 +21,15 @@ const projects: Project[] = [
     source: "https://github.com/Vedant005/File_secure",
   },
   {
-    title: "Sales chatbot",
-
+    title: "IP Whitelist Manager",
     description:
-      "A sales chatbot that enhances the shopping experience by enabling efficient search, exploration, and purchase processes on an e-commerce platform",
-    image: "/sales_chatbot.webp",
-    tech: [
-      "Node.js",
-      "Typescript",
-      "React.js",
-      "MySQL",
-      "Python",
-      "Flask",
-      "JWT",
-      "Flask-SQLAlchemy",
-      "TailwindCSS",
-      "Zustand",
-    ],
-
-    source: "https://github.com/Vedant005/Sales_chatbot",
+      "The IP Whitelist Manager is a robust, backend-only application designed to provide a secure and efficient way to manage and enforce IP-based access restrictions for various services with rate-limiting, Audit Logging, Role-based Access Control, Email notifications. It exposes a suite of RESTful APIs to handle IP whitelist CRUD operations, associate IPs with specific services, and control access based on client IP addresses.",
+    image: "/ip.webp",
+    tech: ["Node.js", "Express.js", "MongoDB", "Swagger", "JWT "],
+    source: "https://github.com/Vedant005/IP-Whitelist-Manager",
   },
   {
     title: "Magnet Store",
-
     description:
       "An Ecommerce website with CRUD functionality and cart,wishlist management",
     image: "/magnet_store.webp",
@@ -63,7 +48,6 @@ const projects: Project[] = [
   },
   {
     title: "SkillBridge",
-
     description:
       "A full-stack freelancing platform connecting clients and freelancers with intelligent ML-powered features for personalized gig experiences, real-time communication, and seamless UI/UX.",
     image: "/skillbridge.webp",
@@ -84,31 +68,36 @@ const projects: Project[] = [
 
 function Projects() {
   return (
-    <section className=" py-10  text-white">
+    <section className="py-10 text-white">
       <h1 className="text-3xl font-bold mb-6 text-white">Projects</h1>
       <div className="max-w-4xl grid md:grid-cols-2 gap-4">
         {projects.map((project, idx) => (
           <div
             key={idx}
-            className="bg-black border dark:border-zinc-500 rounded-xl mb-2 h-full
-"
+            className="bg-black border dark:border-zinc-500 rounded-xl mb-2 h-full flex flex-col" // Added flex flex-col here
           >
             <Image
               width={400}
               height={168}
               src={project.image}
               alt={project.title}
-              className="w-full h-50 object-cover  rounded-t-xl"
+              className="w-full h-50 object-cover rounded-t-xl"
             />
-            <div className="p-4 flex flex-col">
-              <div className="h-25 mb-5">
+            <div className="p-4 flex flex-col flex-grow">
+              {" "}
+              {/* Added flex-grow here */}
+              <div className="mb-4">
+                {" "}
+                {/* Removed fixed height and adjusted margin */}
                 <h3 className="text-lg font-semibold">{project.title}</h3>
                 <p className="mt-2 text-gray-300 text-sm">
                   {project.description}
                 </p>
               </div>
-              <div className="h-15 mb-3">
-                <div className="mt-3 mb-3  flex flex-wrap gap-2">
+              <div className="mt-auto">
+                {" "}
+                {/* Added mt-auto to push tech stack down */}
+                <div className="mt-3 mb-3 flex flex-wrap gap-2">
                   {project.tech.map((tech, i) => (
                     <div
                       key={i}
@@ -119,7 +108,9 @@ function Projects() {
                   ))}
                 </div>
               </div>
-              <div className="p-2 mt-8 flex items-start gap-2">
+              <div className="p-2 flex items-start gap-2">
+                {" "}
+                {/* Added mt-auto to push links to the bottom */}
                 {project.website && (
                   <Link
                     href={project.website}

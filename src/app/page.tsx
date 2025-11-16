@@ -54,7 +54,7 @@ export default function Home() {
 
             <div className="flex gap-2 items-center mb-4    ">
               <Link
-                href="https://drive.google.com/file/d/1daSSctUpciZmilJZIGYzj-ywk9cFYILp/view?usp=sharing"
+                href="https://drive.google.com/file/d/1HEdB6yjiEcSbjoNzFbnraZf2e7YwpPcV/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 ml-4 px-2 py-2 border border-zinc-300 dark:border-zinc-500 rounded-lg text-sm font-medium hover:border-zinc-400 hover:dark:border-zinc-600 transition w-3/4"
@@ -63,7 +63,7 @@ export default function Home() {
               </Link>
 
               <a
-                href="https://drive.google.com/uc?export=download&id=1daSSctUpciZmilJZIGYzj-ywk9cFYILp"
+                href="https://drive.google.com/uc?export=download&id=1HEdB6yjiEcSbjoNzFbnraZf2e7YwpPcV"
                 download
                 className="text-emerald-400 hover:text-emerald-300 border border-zinc-300 dark:border-zinc-500 hover:dark:border-zinc-600 rounded-lg p-2 text-xl transition"
               >

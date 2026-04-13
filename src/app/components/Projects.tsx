@@ -13,6 +13,24 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "Content Repurposing Pipeline",
+    description: "Generate content with videos",
+    image: "/Content_home.png",
+    tech: [
+      "FastApi",
+      "Python",
+      "RAG",
+      "Groq API",
+      "Supadata API",
+      "Next.js",
+      "TypeScript",
+      "Zustand",
+      "TailwindCSS",
+    ],
+    website: "https://content-repurposing-pipeline.vercel.app/",
+    source: "https://github.com/Vedant005/Content-Repurposing-Pipeline",
+  },
+  {
     title: "File Secure",
     description:
       "A secure file upload service in Node.js that stores file metadata in a database, runs background processing tasks, and tracks the status of those tasks.",

@@ -31,6 +31,27 @@ const projects: Project[] = [
     source: "https://github.com/Vedant005/Content-Repurposing-Pipeline",
   },
   {
+    title: "Legalese Translator",
+    description:
+      "An AI-powered tool that converts complex legal language (“legalese”) into clear, plain English so that non-lawyers can easily understand contracts, policies, and legal documents.",
+    image: "/legalese.png",
+    tech: [
+      "FastAPI",
+      "Python",
+      "Langchain",
+      "RAG",
+      "Pinecone",
+      " Groq API",
+      "Hugging Face",
+      "Next.js",
+      "Tailwind CSS",
+      "Typescript",
+      "Zustand",
+    ],
+    website: "https://legalese-translator-wheat.vercel.app/",
+    source: "https://github.com/Vedant005/Legalese-Translator",
+  },
+  {
     title: "File Secure",
     description:
       "A secure file upload service in Node.js that stores file metadata in a database, runs background processing tasks, and tracks the status of those tasks.",

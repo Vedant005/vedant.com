@@ -14,7 +14,8 @@ type Project = {
 const projects: Project[] = [
   {
     title: "Content Repurposing Pipeline",
-    description: "Generate content with videos",
+    description:
+      "An end-to-end AI-powered content repurposing platform that transforms long-form content into multiple optimized formats such as blogs, social media posts, and summaries.",
     image: "/Content_home.png",
     tech: [
       "FastApi",

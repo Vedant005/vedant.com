@@ -13,9 +13,17 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Content Repurposing Pipeline",
+    title: "Anikastha",
     description:
-      "An end-to-end AI-powered content repurposing platform that transforms long-form content into multiple optimized formats such as blogs, social media posts, and summaries.",
+      "Anikastha is an autonomous, context-aware security code reviewer that intercepts GitHub pull requests, performs AST-based code analysis and dependency vulnerability/license auditing, orchestrates multi-agent security evaluation using LangGraph, verifies findings against false positives, and publishes actionable inline review comments and verdicts back to GitHub. It features a modern Next.js dashboard with live Server-Sent Events (SSE) updates and repository policy controls.",
+    image: "/anikastha_1.png",
+    tech: ["FastAPI", "LangGraph", "Redis", "ARQ", "PostgreSQL", "Next.js"],
+    source: "https://github.com/Vedant005/Anikastha",
+  },
+  {
+    title: "Vikara | Video Repurposing Pipeline",
+    description:
+      "Vikara is an enterprise-grade AI automation pipeline that ingests a YouTube video URL and orchestrates a multi-stage LangGraph workflow to produce production-ready content assets: an SEO-optimized blog article, an engagement-driven Twitter/X thread, a thought-leadership LinkedIn post, and timestamped video chapters with grounded quotes.",
     image: "/Content_home.png",
     tech: [
       "FastApi",

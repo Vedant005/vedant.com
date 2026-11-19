@@ -16,7 +16,7 @@ const projects: Project[] = [
     title: "Anikastha",
     description:
       "Anikastha is an autonomous, context-aware security code reviewer that intercepts GitHub pull requests, performs AST-based code analysis and dependency vulnerability/license auditing, orchestrates multi-agent security evaluation using LangGraph, verifies findings against false positives, and publishes actionable inline review comments and verdicts back to GitHub. It features a modern Next.js dashboard with live Server-Sent Events (SSE) updates and repository policy controls.",
-    image: "/anikastha_1.png",
+    image: "/anikastha_3.png",
     tech: ["FastAPI", "LangGraph", "Redis", "ARQ", "PostgreSQL", "Next.js"],
     source: "https://github.com/Vedant005/Anikastha",
   },

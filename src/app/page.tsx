@@ -32,10 +32,12 @@ export default function Home() {
             </p>
 
             <p className="text-gray-300 text-lg sm:text-xl max-w-xl  ">
-              Full-Stack Developer who loves creating intuitive and dynamic UIs
-              with fast, secure and scalable backends using modern tools. <br />
-              Obsessed with learning new technologies.
-              <br /> Currently exploring Web3 and GenAI.
+              Software Engineer building scalable backend systems, full-stack
+              applications, and AI-powered products. I enjoy solving complex
+              engineering problems through thoughtful architecture, clean code,
+              and practical AI implementations. Currently exploring the
+              intersection of backend engineering and intelligent, agent-driven
+              systems.
             </p>
             <Links />
           </div>
@@ -43,7 +45,7 @@ export default function Home() {
           <div className="w-full md:w-1/2 flex flex-col justify-center ">
             <div className="w-full h-80 rounded-xl mb-5 overflow-hidden ">
               <Image
-                src="/profile.webp"
+                src="/vedant.webp"
                 alt="Vedant Kanekar"
                 width={500}
                 height={500}
